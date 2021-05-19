@@ -29,12 +29,47 @@ namespace NaveForm.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.naveButton1 = new NaveUI.Components.naveButton();
+            this.btnGetEmpoloyeers = new NaveUI.Components.naveButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.naveButton1 = new NaveUI.Components.naveButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnGetEmpoloyeers
+            // 
+            this.btnGetEmpoloyeers.FlatAppearance.BorderSize = 0;
+            this.btnGetEmpoloyeers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnGetEmpoloyeers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnGetEmpoloyeers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGetEmpoloyeers.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnGetEmpoloyeers.Location = new System.Drawing.Point(12, 321);
+            this.btnGetEmpoloyeers.Name = "btnGetEmpoloyeers";
+            this.btnGetEmpoloyeers.NaveBorderColor = System.Drawing.Color.White;
+            this.btnGetEmpoloyeers.NaveButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(202)))));
+            this.btnGetEmpoloyeers.NaveOnHoverBorderColor = System.Drawing.Color.White;
+            this.btnGetEmpoloyeers.NaveOnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(0)))), ((int)(((byte)(187)))));
+            this.btnGetEmpoloyeers.NaveOnHoverTextColor = System.Drawing.Color.White;
+            this.btnGetEmpoloyeers.Size = new System.Drawing.Size(637, 36);
+            this.btnGetEmpoloyeers.TabIndex = 0;
+            this.btnGetEmpoloyeers.Text = "Buscar Funcionários";
+            this.btnGetEmpoloyeers.TextColor = System.Drawing.Color.White;
+            this.btnGetEmpoloyeers.UseVisualStyleBackColor = true;
+            this.btnGetEmpoloyeers.Click += new System.EventHandler(this.btnGetEmpoloyeers_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panel1.Controls.Add(this.naveButton1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(661, 80);
+            this.panel1.TabIndex = 1;
             // 
             // naveButton1
             // 
@@ -42,29 +77,19 @@ namespace NaveForm.Forms
             this.naveButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.naveButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.naveButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.naveButton1.Location = new System.Drawing.Point(245, 286);
+            this.naveButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.naveButton1.Location = new System.Drawing.Point(606, 17);
             this.naveButton1.Name = "naveButton1";
             this.naveButton1.NaveBorderColor = System.Drawing.Color.White;
             this.naveButton1.NaveButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(202)))));
             this.naveButton1.NaveOnHoverBorderColor = System.Drawing.Color.White;
-            this.naveButton1.NaveOnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(65)))), ((int)(((byte)(179)))));
+            this.naveButton1.NaveOnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(0)))), ((int)(((byte)(187)))));
             this.naveButton1.NaveOnHoverTextColor = System.Drawing.Color.White;
-            this.naveButton1.Size = new System.Drawing.Size(165, 36);
-            this.naveButton1.TabIndex = 0;
-            this.naveButton1.Text = "Entrar em contato";
+            this.naveButton1.Size = new System.Drawing.Size(43, 46);
+            this.naveButton1.TabIndex = 3;
+            this.naveButton1.Text = "X";
             this.naveButton1.TextColor = System.Drawing.Color.White;
             this.naveButton1.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(661, 80);
-            this.panel1.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -76,14 +101,24 @@ namespace NaveForm.Forms
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 86);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(637, 229);
+            this.flowLayoutPanel1.TabIndex = 3;
+            this.flowLayoutPanel1.WrapContents = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(661, 354);
+            this.ClientSize = new System.Drawing.Size(661, 367);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.naveButton1);
+            this.Controls.Add(this.btnGetEmpoloyeers);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -97,8 +132,10 @@ namespace NaveForm.Forms
 
         #endregion
 
-        private NaveUI.Components.naveButton naveButton1;
+        private NaveUI.Components.naveButton btnGetEmpoloyeers;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private NaveUI.Components.naveButton naveButton1;
     }
 }
