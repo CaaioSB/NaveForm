@@ -31,7 +31,7 @@ namespace NaveForm.Forms
         {
             this.btnGetEmpoloyeers = new NaveUI.Components.naveButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.naveButton1 = new NaveUI.Components.naveButton();
+            this.btnClose = new NaveUI.Components.naveButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
@@ -63,7 +63,7 @@ namespace NaveForm.Forms
             // 
             this.panel1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.panel1.Controls.Add(this.naveButton1);
+            this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -71,25 +71,26 @@ namespace NaveForm.Forms
             this.panel1.Size = new System.Drawing.Size(661, 80);
             this.panel1.TabIndex = 1;
             // 
-            // naveButton1
+            // btnClose
             // 
-            this.naveButton1.FlatAppearance.BorderSize = 0;
-            this.naveButton1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.naveButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.naveButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.naveButton1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.naveButton1.Location = new System.Drawing.Point(606, 17);
-            this.naveButton1.Name = "naveButton1";
-            this.naveButton1.NaveBorderColor = System.Drawing.Color.White;
-            this.naveButton1.NaveButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(202)))));
-            this.naveButton1.NaveOnHoverBorderColor = System.Drawing.Color.White;
-            this.naveButton1.NaveOnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(0)))), ((int)(((byte)(187)))));
-            this.naveButton1.NaveOnHoverTextColor = System.Drawing.Color.White;
-            this.naveButton1.Size = new System.Drawing.Size(43, 46);
-            this.naveButton1.TabIndex = 3;
-            this.naveButton1.Text = "X";
-            this.naveButton1.TextColor = System.Drawing.Color.White;
-            this.naveButton1.UseVisualStyleBackColor = true;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnClose.Location = new System.Drawing.Point(606, 17);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.NaveBorderColor = System.Drawing.Color.White;
+            this.btnClose.NaveButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(202)))));
+            this.btnClose.NaveOnHoverBorderColor = System.Drawing.Color.White;
+            this.btnClose.NaveOnHoverButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(0)))), ((int)(((byte)(187)))));
+            this.btnClose.NaveOnHoverTextColor = System.Drawing.Color.White;
+            this.btnClose.Size = new System.Drawing.Size(43, 46);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.TextColor = System.Drawing.Color.White;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox1
             // 
@@ -136,6 +137,6 @@ namespace NaveForm.Forms
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private NaveUI.Components.naveButton naveButton1;
+        private NaveUI.Components.naveButton btnClose;
     }
 }
