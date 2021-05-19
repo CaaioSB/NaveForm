@@ -2,7 +2,9 @@
   "employeers": [
     {
       "id": 1,
-      "name":  "Caio Silva"
+      "name": "Caio Silva",
+      "role":  "Front-end Developer",
+      "src": "https://avatars.githubusercontent.com/u/34246280?v=4"
     }
   ]
 }
