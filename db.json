@@ -3,8 +3,32 @@
     {
       "id": 1,
       "name": "Caio Silva",
-      "role":  "Front-end Developer",
-      "src": "https://avatars.githubusercontent.com/u/34246280?v=4"
+      "role": "Front-end Developer",
+      "src": "https://nave.rs/static/1e66f12bad8f5dd9859337d30d6fc449/2a4de/caio-naver.png"
+    },
+    {
+      "id": 2,
+      "name": "Richard Tuchtenhagen",
+      "role": "Back-end Developer",
+      "src": "https://nave.rs/static/692c25fe4abe3b2d7b500a4eebb89513/2a4de/richard-naver.png"
+    },
+    {
+      "id": 3,
+      "name": "Gabriel do Couto",
+      "role": "Technology Coordinator",
+      "src": "https://nave.rs/static/e6372d1d5b14756e2e2a382bacca41b7/2a4de/couto-naver.png"
+    },
+    {
+      "id": 4,
+      "name": "Daniel Nuñez",
+      "role": "Front-end Developer",
+      "src": "https://nave.rs/static/d036a00bcf468c50c9de8ad593c2e97e/2a4de/danielzinho-naver.png"
+    },
+    {
+      "id": 5,
+      "name": "Gustavo Pinho",
+      "role": "Technology Manager",
+      "src": "https://nave.rs/static/8421782f7a3ca8ee611c348f2b6e62f5/2a4de/gustavo-naver.png"
     }
   ]
 }
