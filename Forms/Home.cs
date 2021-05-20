@@ -22,6 +22,11 @@ namespace NaveForm.Forms
 
         private void btnGetEmpoloyeers_Click(object sender, EventArgs e)
         {
+            getEmployeers();
+        }
+
+        private void getEmployeers()
+        {
             flowLayoutPanel1.Controls.Clear();
 
             HttpClient client = new HttpClient();
@@ -49,7 +54,23 @@ namespace NaveForm.Forms
                     flowLayoutPanel1.Controls.Add(emp);
                 }
             }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("Ops, ocorreu um problema ao buscar os funcionários. Deseja tentar novamente?\n\nCaso clique \"não\" a aplicação será fechada.", "Erro", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    btnGetEmpoloyeers.PerformClick();
+                    return;
+                }
+
+                btnClose.PerformClick();
+            }
         }
 
+        private void Home_Load(object sender, EventArgs e)
+        {
+            getEmployeers();
+        }
     }
 }
